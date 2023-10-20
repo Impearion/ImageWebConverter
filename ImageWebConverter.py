@@ -1,4 +1,5 @@
 from PIL import Image
+import pillow_avif 
 import os
 
 # Set the target resolution and quality
@@ -25,10 +26,10 @@ for image_file in image_files:
         # Resize the image
         img = img.resize(target_resolution, Image.LANCZOS)
 
-        # Convert the image to WebP format
+        # Convert the image to Webp format
         output_path = os.path.join(output_directory, os.path.splitext(image_file)[0] + ".webp")
         img.save(output_path, "webp", quality=quality)
 
-        print(f"Resized and converted to WebP: {image_file}")
+        print(f"Resized and converted to Webp: {image_file}")
 
 print("Image processing complete.")
