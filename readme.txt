@@ -1,5 +1,5 @@
 Information:
-This Python script converts and compresses jpg, jpeg, png, bmp and gif images to webp.
+This Python script converts and compresses jpg, jpeg, png, bmp and gif images to webp or avif.
 
 To run this code you require Python, Pip and the library "Pillow".
 
