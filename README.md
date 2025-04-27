@@ -7,6 +7,7 @@ To run this code you require Python, Pip and the library "Pillow".
 1. Install Python
 2. Install Pip in CMD
 3. pip install Pillow
+4. pip install pillow_avif_plugin
 
 ## Usage
 1. Put the images that you want to convert into the "input_images" folder.
