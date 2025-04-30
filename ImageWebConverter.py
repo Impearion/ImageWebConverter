@@ -21,9 +21,9 @@ def convert(image_file, path, outf, qual):
 
 # parser for argument handling
 parser = argparse.ArgumentParser(description="Python script to resize and compress images")
-parser.add_argument('--res', type=str, required=False, help='Target resolution, format number"x"number', default="1024x800")
-parser.add_argument('--qual', type=int, required=False, help='Target quality, format number', default=100)
-parser.add_argument('--outf', type=str, required=False, help='Target file format, format ("webp", "avif")', default="webp")
+parser.add_argument('--res', type=str, required=False, help='Target resolution, format: ((number"x"number) | number)', default="1024x800")
+parser.add_argument('--qual', type=int, required=False, help='Target quality, format: (number)', default=100)
+parser.add_argument('--outf', type=str, required=False, help='Target file format, format: ("webp" | "avif")', default="webp")
 parser.add_argument('source', type=str, nargs='?', help='Source files to change. Can be filepath or directory. If directory is passed, all files are converted. If no source is passed, workdir is used.', default=".")
 args = parser.parse_args()
 
@@ -31,7 +31,7 @@ args = parser.parse_args()
 if 'x' in args.res:
     target_resolution = (int(args.res.split("x")[0]), int(args.res.split("x")[1]))
 else:
-    target_resolution = (args.res, args.res)
+    target_resolution = (int(args.res), int(args.res))
 quality = args.qual
 path = args.source
 
