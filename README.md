@@ -8,9 +8,10 @@ To run this code you require Python, Pip and the library "Pillow".
 2. Install Pip in CMD
 3. pip install Pillow
 4. pip install pillow_avif_plugin
+5. clone this repo from github
 
 ## Usage
-Run "py ImageWebConverter.py"
+Run "py [path/to/ImageConverter.py]"
 
 Help output:
 usage: ImageWebConverter.py [-h] [--res RES] [--qual QUAL] [--outf OUTF] [source]
