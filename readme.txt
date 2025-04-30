@@ -13,19 +13,7 @@ To run this code you require Python, Pip and the library "Pillow".
 ## Usage
 Run "py [path/to/ImageConverter.py]"
 
-Help output:
-usage: ImageWebConverter.py [-h] [--res RES] [--qual QUAL] [--outf OUTF] [source]
-
-Python script to resize and compress images
-
-positional arguments:
-  source       Source files to change. Can be filepath or directory. If directory is passed, all files are converted. If no source is passed, workdir is used.
-
-options:
-  -h, --help   show this help message and exit
-  --res RES    Target resolution, format number"x"number
-  --qual QUAL  Target quality, format number
-  --outf OUTF  Target file format, format ("webp", "avif")
+For additional info run with --help flag
 
 ## Image Resolution
 https://tiny-img.com/blog/best-image-size-for-website/
