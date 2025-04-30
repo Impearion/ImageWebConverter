@@ -31,7 +31,7 @@ args = parser.parse_args()
 if 'x' in args.res:
     target_resolution = (int(args.res.split("x")[0]), int(args.res.split("x")[1]))
 else:
-    target_resolution = args.res
+    target_resolution = (args.res, args.res)
 quality = args.qual
 path = args.source
 
