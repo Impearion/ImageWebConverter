@@ -28,7 +28,10 @@ parser.add_argument('source', type=str, nargs='?', help='Source files to change.
 args = parser.parse_args()
 
 # grab arguments and save them
-target_resolution = (int(args.res.split("x")[0]), int(args.res.split("x")[1]))
+if 'x' in args.res:
+    target_resolution = (int(args.res.split("x")[0]), int(args.res.split("x")[1]))
+else:
+    target_resolution = args.res
 quality = args.qual
 path = args.source
 
